@@ -18,6 +18,7 @@ public class Activity implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_activity;
     private String name ;
+    private String place;
     private String description ;
     private float price;
     @Temporal(TemporalType.DATE)

@@ -1,10 +1,17 @@
 package com.example.tunisiacampspring.services;
 
 import com.example.tunisiacampspring.entities.User;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import java.util.List;
 
 public interface IUserService {
-    public User add_user(User user);
-    public User retreive_user(Long id);
-    public User update_User(User user);
-    public void delete_user(Long id );
+    public User addUser(User user) ;
+
+    public void deleteUser (long id_user) ;
+
+    public User getUserById(Long id_user);
+    public List<User> getAllUsers() ;
+    public User updateUser(Long id,User user) ;
+
 }

@@ -1,10 +1,16 @@
 package com.example.tunisiacampspring.services;
 
 import com.example.tunisiacampspring.entities.campSite;
+import java.util.List;
 
 public interface IcampSiteService {
-    public campSite add_campSite(campSite campSite);
-    public campSite retreive_campSite(Long id);
-    public campSite update_campSite(campSite campSite);
-    public void delete_campSite(Long id );
+
+
+    public campSite addcampSite(campSite campSite) ;
+
+    public void deletecampSite (long id_campSite) ;
+
+    public campSite getcampSiteById(Long id_campSite);
+    public List<campSite> getAllcampSites() ;
+    public campSite updatecampSite(Long id,campSite campSite) ;
 }
