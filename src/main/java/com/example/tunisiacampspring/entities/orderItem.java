@@ -14,7 +14,7 @@ import java.util.*;
 public class orderItem implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_orderItem;
     private int quantity;
     private float unitPrice;

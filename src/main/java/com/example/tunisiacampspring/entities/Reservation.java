@@ -15,7 +15,7 @@ import java.util.*;
 public class Reservation implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_reservation;
     @Temporal(TemporalType.DATE)
     private Date startDate  ;

@@ -2,6 +2,8 @@ package com.example.tunisiacampspring.services;
 
 import com.example.tunisiacampspring.entities.Activity;
 import com.example.tunisiacampspring.repositories.activityRepository;
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,6 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import java.util.List;
 
 @Service
+@Slf4j
+@AllArgsConstructor
 public class ActivityServiceImpl implements IActivityService{
 
     private activityRepository activityRepository;

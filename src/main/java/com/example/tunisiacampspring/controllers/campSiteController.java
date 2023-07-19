@@ -38,7 +38,7 @@ public class campSiteController {
     }
 
     @PutMapping("/{id}")
-    public campSite updatecampSite(@PathVariable("id") Long id, @PathVariable campSite campSite) {
+    public campSite updatecampSite(@PathVariable("id") Long id, @RequestBody campSite campSite) {
         return campSiteService.updatecampSite(id,campSite);
     }
 }
